@@ -1,0 +1,566 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    list-style: none;
+
+}
+
+html,
+body {
+    font-size: 62.5%;
+    height: 100vh;
+    width: 100%;
+
+}
+
+header {
+    height: 7rem;
+    width: 100%;
+    background-color: black;
+    padding: 0 20rem;
+    position: fixed;
+    z-index: 2;
+    & svg{
+        display: none;
+    }
+
+
+    & nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* position: relative; */
+
+        & h1 {
+            width: 30%;
+            font-size: 3rem;
+            color: white;
+            border-bottom: 0.3rem solid gray;
+        }
+        &  div{
+            height: 100%;
+            width: 50%;
+
+            & ul {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+    
+                & li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 2.9rem;
+    
+                }
+            }
+        }
+
+        
+    }
+
+}
+
+main {
+    height: 100vh;
+    width: 100vwv;
+    
+    & #nothig{
+        display: none;
+        position: fixed;
+        height: 80%;
+        width: 100%;
+        /* background-color: aliceblue; */
+        bottom: 0;
+        z-index: 3;
+    }
+
+}
+
+#home {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8rem 20rem 0 20rem;
+    background-color: black;
+
+    & .left {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        & h3 {
+            width: 30%;
+            font-size: 2rem;
+            color: rgba(206, 214, 119, 0.9);
+
+        }
+
+        & div .f-span {
+            width: max-content;
+            font-size: 10rem;
+            color: rgba(122, 122, 197, 0.858);
+        }
+
+        & div .s-span {
+            width: max-content;
+            font-size: 10rem;
+            color: rgba(206, 214, 119, 0.9);
+        }
+
+        & p {
+            font-size: 3rem;
+            width: 100%;
+            color: rgba(223, 117, 117, 0.679);
+        }
+
+
+    }
+
+    .right {
+        background-image: url("img.jpeg");
+        background-repeat: no-repeat;
+        background-size: 65% 100%;
+    }
+}
+
+#about {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 8rem 20rem 0 20rem;
+    background-color: black;
+
+
+    & .left {
+        padding: 0 3rem 3rem 3rem;
+        background-color: rgb(24, 24, 24);
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        border-radius: 2rem;
+
+        & h1 {
+            font-size: 6rem;
+            z-index: 1;
+
+
+        }
+
+        & img {
+            height: 65%;
+            width: 55%;
+            position: absolute;
+            left: 3rem;
+            bottom: 14rem;
+            z-index: 1;
+        }
+
+        & div {
+            position: relative;
+            height: 60%;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+
+            & ul {
+                position: absolute;
+                bottom: 0;
+                padding-left: 1rem;
+
+                & li {
+                    font-size: 1.5rem;
+                    color: rgb(255, 255, 255);
+                    line-height: 1.5;
+                }
+            }
+        }
+
+    }
+
+    & .right {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 3rem;
+        gap: 3rem;
+
+        & p {
+            width: 100%;
+            font-size: 2rem;
+            color: gray;
+            line-height: 2;
+            text-align: justify;
+        }
+
+        & table tr th,
+        table tr td {
+            font-size: 2rem;
+            text-align: left;
+            line-height: 2;
+            color: gray;
+
+        }
+
+    }
+
+}
+
+
+#education {
+    height: 100%;
+    width: 100%;
+    padding: 8rem 20rem 0 20rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    & h1 {
+        width: 100%;
+        font-size: 7rem;
+        border-bottom: 0.5rem solid rgb(74, 64, 64);
+        background-color: black;
+        text-align: center;
+    }
+
+    & .top {
+        height: 60%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+
+        & .left div,
+        .right div {
+            height: 80%;
+            width: 80%;
+            padding: 2rem;
+            border-radius: 2rem;
+            background-color: rgb(24, 24, 24);
+
+            & h2 {
+                color: rgba(255, 200, 0, 0.918);
+                margin-bottom: 2rem;
+                font-size: 4rem;
+            }
+
+            & span {
+                color: white;
+                font-size: 3rem;
+                
+            }
+
+            & p {
+                color: gray;
+                font-size: 2rem;
+                margin-top: 2rem;
+            }
+
+        }
+
+        & .right div {
+            height: 90%;
+        }
+
+    }
+
+    & button {
+        height: 5rem;
+        width: 15rem;
+        background-color: rgba(255, 200, 0, 0.918);
+        border-radius: 2.5rem;
+        font-size: 1rem;
+        font-weight: 700;
+        border: 0;
+
+        & a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    & button:hover {
+        background-color: rgba(255, 255, 255, 0.918);
+    }
+
+
+
+}
+
+#contact {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 20rem 0 20rem;
+    gap: 2rem;
+
+    & h1 {
+        width: 100%;
+        font-size: 7rem;
+        border-bottom: 0.5rem solid rgb(74, 64, 64);
+        background-color: black;
+        text-align: center;
+
+    }
+
+    & p {
+        font-size: 2rem;
+        color: gray;
+        text-align: center;
+    }
+
+    & .contact-main-section {
+        height: 60%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 2rem;
+
+        & .contact-left,
+        .contact-right {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+            /* background-color: beige; */
+
+
+            & div {
+                height: 50%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 1rem;
+
+
+                & div {
+                    height: 8rem;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    background-color: rgba(27, 25, 25, 0.636);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & svg {
+                        height: 4rem;
+                        aspect-ratio: 1;
+                    }
+
+                }
+
+                & h2 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+
+                & span {
+                    font-size: 1.5rem;
+                    text-align: center;
+                }
+            }
+
+
+        }
+
+
+    }
+
+    & .social-meadia {
+        height: 5rem;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .social-meadia>a {
+        height: 4rem;
+        aspect-ratio: 1;
+        background-color: rgba(27, 25, 25, 0.636);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-meadia>a>svg {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .social-meadia>p {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (width<=1200px) {
+    html {
+        font-size: 56.25%;
+    }
+
+
+
+}
+
+@media (width<=1080px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (width<=960px) {
+    html {
+        font-size: 43.75%;
+    }
+}
+
+@media (width<=850px) {
+ 
+    #home {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 8rem 20rem 0 20rem;
+        background-color: black;
+
+        & .left {
+            background-image: url("img.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+            & h3 {
+
+                color: rgba(255, 255, 255, 0.9);
+
+            }
+
+            & div .f-span {
+
+                color: rgb(0, 0, 255);
+            }
+
+            & div .s-span {
+                color: rgb(255, 0, 0);
+            }
+
+            & p {
+                font-size: 3rem;
+                width: 100%;
+                color: rgb(0, 0, 255);
+            }
+
+        }
+
+        & .right {
+            display: none;
+        }
+    }
+
+    #about {
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 8rem 20rem 0 20rem;
+        background-color: black;
+
+        .left {
+            height: 100rem;
+        }
+    }
+
+}
+
+@media (width<=700px) {
+
+    header {
+        height: 7rem;
+        width: 100%;
+        padding: 0 5rem;
+        z-index: 2;
+        & 
+
+        nav div{
+            display: none;
+            height: 20rem;
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color:rgb(24, 24, 24);
+
+            & ul{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            
+        }
+        & svg{
+            display: inline;
+            height: 100%;
+            aspect-ratio: 1;
+        }
+    }
+
+
+    #home {
+        padding: 8rem 5rem 0 5rem;
+    }
+
+    #about {
+        padding: 8rem 5rem 0 5rem;
+    }
+
+    #education {
+        padding: 8rem 5rem 0 5rem;
+
+    }
+
+    #contact {
+        padding: 8rem 5rem 0 5rem;
+
+    }
+
+
+
+}
+
+@media (width<=500px) {
+    #education .top {
+        height: 110rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+
+        & .left div,
+        .right div {
+            height: 30rem;
+            
+        }
+    }
+}
